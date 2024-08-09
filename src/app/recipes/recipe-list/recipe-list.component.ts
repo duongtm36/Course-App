@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Recipe } from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './recipe-list.component.css',
 })
 export class RecipeListComponent {
-  recipes = [];
+  recipes: Recipe[] = [
+    new Recipe(
+      'Brulle Cheese Cake Recipe',
+      'This is a Brulle Cheese Cake Recipe',
+      'https://marketplace.canva.com/EAFEGwki5iw/2/0/1067w/canva-white-yellow-clean-modern-brulle-cheese-cake-recipe-card-ZLMW2pkhjjg.jpg'
+    ),
+  ];
 }
